@@ -1,9 +1,10 @@
 on: push
 jobs:
-  curl:
-    runs-on: ubuntu-latest
+  takepic:
+    runs-on:  windows-latest
     steps:
-    - name: Github Action for curl
-      uses: wei/curl@v1.1.1
+    - name: screenshot-website
+      uses: swinton/screenshot-website@v1.0.0
       with:
-        args: -X POST https://hcti.io/v1/image -u '3a121aa9-0f18-42b8-9e57-21546ef4fb70:d1c9e2fc-b8f7-413e-8f20-20b2885a9a78' -d url="https://kathaa.ml/7777/5.htm" -ms_delay 2000
+          souce: https://kathaa.ml/7777/5.htm
+          destination: today.png
