@@ -10,3 +10,5 @@ jobs:
           destination: today.png
     - name: upl
       uses: actions/upload-artifact@v2
+      with: 
+        path : today.png
