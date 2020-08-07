@@ -1,0 +1,9 @@
+on: push
+jobs:
+  getimg:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      uses: wei/curl@v1.1.1
+      with:
+        args: -X POST https://hcti.io/v1/image -u '3a121aa9-0f18-42b8-9e57-21546ef4fb70:d1c9e2fc-b8f7-413e-8f20-20b2885a9a78' -d url="https://kathaa.ml/s5.html"
